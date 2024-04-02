@@ -484,7 +484,7 @@ address {
     height: 40px;
     font-size: 12px;
     line-height: 200%;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
 }
 
 .footer-subscribe-input::placeholder {
@@ -513,7 +513,7 @@ address {
 }
 
 .modal-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -526,7 +526,7 @@ address {
     opacity: 1;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: auto;
     
 }
@@ -537,17 +537,21 @@ address {
 } */
 
 .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fcfcfc;
     border-radius: 4px;
     padding: 24px;
-    max-width: 408px;
-    max-height: 584px;
+    width: 408px;
+    min-height: 584px;
     text-align: center;             
 } 
 
 .button-modal-close {
-    position: absolute;
-    top: 24px;
+   /* position: absolute;
+    top: 24px;*/
     right: 24px;
     display: flex;
     align-items: center;
@@ -607,6 +611,7 @@ address {
 
 .form-text-label {
     display: block;
+    text-align: left;
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
