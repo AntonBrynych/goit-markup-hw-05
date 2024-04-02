@@ -465,6 +465,7 @@ address {
     font-weight: 500;
     margin-bottom: 16px;
     margin-left: 80px;
+    letter-spacing: 0.02em;
 }
 
 .footer-subscribe-form {
@@ -484,7 +485,7 @@ address {
     height: 40px;
     font-size: 12px;
     line-height: 200%;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 }
 
 .footer-subscribe-input::placeholder {
@@ -543,15 +544,15 @@ address {
     transform: translate(-50%, -50%);
     background-color: #fcfcfc;
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px 24px;
     width: 408px;
     min-height: 584px;
-    text-align: center;             
+    text-align: center;            
 } 
 
 .button-modal-close {
-   /* position: absolute;
-    top: 24px;*/
+    position: absolute;
+    top: 24px;
     right: 24px;
     display: flex;
     align-items: center;
